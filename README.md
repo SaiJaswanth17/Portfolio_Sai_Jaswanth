@@ -2,12 +2,16 @@
 
 A modern, animated portfolio website built with **Next.js 15**, **Bun**, and **TailwindCSS**, showcasing my work as a Full Stack Developer specializing in AI & Web Technologies.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://yourwebsite.com)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://portfolio-sai-jaswanth.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.x-orange)](https://bun.sh/)
 
 ![Portfolio Preview](https://via.placeholder.com/1200x600/3b82f6/ffffff?text=Portfolio+Preview)
+
+## 🌐 Live Demo
+
+**Visit the live portfolio**: [https://portfolio-sai-jaswanth.vercel.app/](https://portfolio-sai-jaswanth.vercel.app/)
 
 ## ✨ Features
 
