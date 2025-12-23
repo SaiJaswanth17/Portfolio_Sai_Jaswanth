@@ -7,7 +7,7 @@ A modern, animated portfolio website built with **Next.js 15**, **Bun**, and **T
 [![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.x-orange)](https://bun.sh/)
 
-![Portfolio Preview](https://via.placeholder.com/1200x600/3b82f6/ffffff?text=Portfolio+Preview)
+![Portfolio Preview](./public/portfolio-preview.png)
 
 ## 🌐 Live Demo
 
