@@ -28,6 +28,16 @@ export const SKILLS: SkillCategory[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: 'Personal Portfolio Website',
+    description: 'Modern, responsive portfolio built with Next.js 15, featuring custom animations (ShinyText, TargetCursor, StarBorder), dark mode support, and optimized performance. Showcases projects, experience, and skills with premium UI/UX design.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    repoLink: 'https://github.com/SaiJaswanth17/Portfolio_Sai_Jaswanth',
+    liveLink: 'https://portfolio-sai-jaswanth.vercel.app/',
+    status: 'Completed',
+    icon: 'Code',
+    color: 'from-violet-500 to-purple-500'
+  },
+  {
     title: 'Solar Power Prediction',
     description: 'Developed a machine learning model using Artificial Neural Networks (ANN) to predict the performance of a solar still based on environmental parameters like temperature and solar radiation.',
     tech: ['Python', 'ANN', 'ML'],
