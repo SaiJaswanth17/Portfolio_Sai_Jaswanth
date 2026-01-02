@@ -103,6 +103,22 @@ const Navbar: React.FC = () => {
                   {link.name}
                 </a>
               ))}
+              <div className="px-3 py-2">
+                <StarBorder
+                  as="a"
+                  href={SOCIAL_LINKS.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="#3b82f6"
+                  speed="4s"
+                  className="cursor-target w-full block"
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    <span>Resume</span>
+                    <Download size={16} />
+                  </span>
+                </StarBorder>
+              </div>
               <div className="flex items-center justify-between px-3 py-2 mt-4 border-t border-gray-200 dark:border-slate-700">
                 <span className="text-gray-700 dark:text-gray-200 font-medium">Appearance</span>
                 <button

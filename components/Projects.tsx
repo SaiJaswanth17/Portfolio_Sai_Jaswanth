@@ -138,14 +138,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           rotateY: tilt.rotateY,
         }}
         transition={{ duration: 0.2, ease: 'easeOut' }}
-        className="relative bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-cyan-500/30 transition-all duration-300 flex flex-col h-full"
+        className="relative bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-300 dark:border-slate-700 shadow-md hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-cyan-500/30 transition-all duration-300 flex flex-col h-full"
         style={{
           transformStyle: 'preserve-3d',
         }}
       >
         {/* Colored background overlay with theme-aware opacity */}
         <div
-          className="absolute inset-0 rounded-2xl pointer-events-none opacity-[0.08] dark:opacity-[0.15] transition-opacity"
+          className="absolute inset-0 rounded-2xl pointer-events-none opacity-[0.45] dark:opacity-[0.15] transition-opacity"
           style={{
             background: `linear-gradient(135deg, rgb(${getCardBackgroundColor(project.color)}) 0%, transparent 50%)`,
           }}
@@ -158,13 +158,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           transition={{ delay: index * 0.1 + 0.2 }}
         >
           <motion.div
-            className="text-white/30 group-hover:text-white/50 transition-colors duration-500"
+            className="text-slate-800/80 dark:text-white/30 group-hover:text-slate-900 dark:group-hover:text-white/50 transition-colors duration-500"
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ duration: 0.3 }}
           >
             {icons[project.icon]}
           </motion.div>
-          <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+          <div className="absolute inset-0 bg-white/10 dark:bg-black/10 group-hover:bg-transparent transition-colors"></div>
 
           {/* Glow effect on hover */}
           <motion.div
@@ -267,3 +267,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
 };
 
 export default Projects;
+
+
+

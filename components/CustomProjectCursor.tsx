@@ -64,8 +64,8 @@ const CustomProjectCursor: React.FC = () => {
     if (!isVisible) return null;
 
     const cursorConfig = {
-        default: { size: 32, text: '' },
-        card: { size: 64, text: 'View' },
+        default: { size: 24, text: '' },
+        card: { size: 24, text: '' },
         link: { size: 48, text: 'Click' },
     };
 
@@ -93,19 +93,20 @@ const CustomProjectCursor: React.FC = () => {
                 >
                     {/* Outer ring */}
                     <motion.div
-                        className="absolute inset-0 rounded-full border-2 border-slate-800 dark:border-cyan-400"
+                        className="absolute inset-0 rounded-full border-2 border-purple-500 shadow-lg shadow-purple-500/60"
                         animate={{
                             scale: cursorState === 'default' ? 1 : 1.2,
-                            opacity: cursorState === 'default' ? 0.5 : 0.8,
+                            opacity: cursorState === 'default' ? 0.9 : 1,
                         }}
                     />
 
                     {/* Inner dot */}
                     <motion.div
-                        className="absolute bg-slate-800 dark:bg-cyan-400 rounded-full"
+                        className="absolute bg-purple-500 rounded-full shadow-md shadow-purple-500/50"
                         animate={{
-                            width: cursorState === 'default' ? 6 : 0,
-                            height: cursorState === 'default' ? 6 : 0,
+                            width: 0,
+                            height: 0,
+                            opacity: 0,
                         }}
                     />
 
@@ -114,7 +115,7 @@ const CustomProjectCursor: React.FC = () => {
                         <motion.span
                             initial={{ opacity: 0, scale: 0.8 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            className="text-slate-800 dark:text-cyan-400 text-xs font-medium"
+                            className="text-purple-500 text-xs font-bold"
                         >
                             {config.text}
                         </motion.span>
